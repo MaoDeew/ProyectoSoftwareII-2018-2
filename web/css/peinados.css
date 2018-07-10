@@ -1,0 +1,32 @@
+*{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p{
+	font-size: 13px;
+}
+
+
+#divMenuCortes1 li{
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;	
+	border: 1px solid black;
+	background: white;
+}
+
+#divMenuCortes2 li{
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;	
+	border: 1px solid black;
+	background: white;
+}
+
+#divMenuTintes li{
+	text-decoration: none;
+	list-style: none;
+	display: inline-block;	
+	border: 1px solid white;
+	background: white;
+}

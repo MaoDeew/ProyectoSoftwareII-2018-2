@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html> 
+ <head>
+  <title>My Tests</title>
+
+  <meta http-equiv="Content-Type"
+         content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-2.1.1.css">
+  <script src="http://code.jquery.com/qunit/qunit-2.1.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+	<script src="js/p5.dom.js"></script>
+
+  </head>
+  <body>
+    <div id="qunit"></div>
+    <script src="../js/scriptImagen.js"></script>
+    <script>
+    	var seleccionPeinado1 = select("#seleccion1Corte");
+    	QUnit.test("MyTest", function (assert) {
+ 			assert.ok(seleccionPeinado1.mousePressed() == true);
+		});
+    </script>
+  </body>
+</html>

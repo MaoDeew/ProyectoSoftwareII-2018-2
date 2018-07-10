@@ -1,0 +1,237 @@
+header {
+	background:#b6b6b6;
+	color:#ffffff;
+}
+
+body {
+	background:#000000;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #6d6d6d;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Perpetua Titling MT", Times, serif;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.Inicio{
+    background:#b6b6b6;
+
+}
+
+.centrado{
+    position: relative;
+    top: 110px;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+h3{
+	text-align: center;
+	font-family: "Perpetua Titling MT", Times, serif;
+	font-size: 20px;
+	color: #000000;
+}
+
+h1{
+	font-family: "Perpetua Titling MT", Times, serif;
+	font-size: 25px;
+	color: #000000;
+	text-align: center;
+}
+
+.fondo-qr{
+	background:#e3ea08;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color:#b6b6b6;
+    color: #000000;
+    text-align: center;
+    font-family: "Perpetua Titling MT";
+}
+
+.borde{
+  height: 150px;
+  width: 119px;
+  border: 10px solid;
+  border-radius: 15px;
+  
+
+}
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 2em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+          background: #6e6a85;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #000000;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #ffffff;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.encabezado{
+  z-index: 2;
+  position: relative;
+}
+
+.cuerpo{
+  z-index: 1;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Barra-navegacion{
+  width: 380px;
+  margin: 30px auto;
+  background: #9e9e9e;
+}
+
+.Barra-navegacion2{
+  width: 200px;
+  margin: 30px auto;
+  background: #9e9e9e;
+}
+
+.Barra-navegacion ul{
+  list-style: none;
+}
+
+.menu > li{
+  position: relative;
+  display: inline-block;
+}
+
+.menu > li > a{
+  display: block;
+  padding: 15px 20px;
+  color: #353535;
+  font-family: "Perpetua Titling MT";
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu li a:hover{
+  color: #ffffff;
+  transition:  all .3s;
+}
+
+.submenu{
+  position: absolute;
+  background: #333333;
+  width: 150%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+
+.submenu li a{
+  display: block;
+  padding: 15px;
+  color: #ffffff;
+  font-family: "Perpetua";
+  text-decoration: none;
+}
+
+.menu li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+}
